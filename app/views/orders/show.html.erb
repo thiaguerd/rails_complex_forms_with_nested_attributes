@@ -5,5 +5,12 @@
   <%= @order.buyer_name %>
 </p>
 
+<h4>Purchased items</h4>
+<% @order.purchase_products.each do |pruchased_product|  %>
+  <ul>
+    <li>[<%= pruchased_product.quantity %>] <%= pruchased_product.product.name %> </li>
+  </ul>
+<% end %>
+
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

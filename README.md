@@ -11,3 +11,5 @@
 * map a relationship
 
 * update a Order form and Order controller to accept nested attributes for purchase_products
+
+* update a Order view to show purchased products

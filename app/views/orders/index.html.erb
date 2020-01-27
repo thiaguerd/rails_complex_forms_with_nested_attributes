@@ -18,6 +18,16 @@
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      <tr>
+        <td colspan="3">
+          <h4>Purchased items</h4>
+          <% order.purchase_products.each do |pruchased_product|  %>
+            <ul>
+              <li>[<%= pruchased_product.quantity %>] <%= pruchased_product.product.name %> </li>
+            </ul>
+          <% end %>
+        </td>
+      </tr>
     <% end %>
   </tbody>
 </table>
