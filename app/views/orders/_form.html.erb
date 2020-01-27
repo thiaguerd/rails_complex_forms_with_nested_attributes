@@ -16,6 +16,23 @@
     <%= form.text_field :buyer_name %>
   </div>
 
+  <%= form.fields_for :purchase_products do |another_form| %>
+    <div class="field">
+      <table>
+        <tr>
+          <td>
+            <%= another_form.label :product %>
+            <%= another_form.select(:product_id, Product.all.collect {|p| [ p.name, p.id ] }, ) %>
+          </td>
+          <td>
+            <%= another_form.label :quantity %>
+            <%= another_form.number_field :quantity %>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <% end %>
+
   <div class="actions">
     <%= form.submit %>
   </div>

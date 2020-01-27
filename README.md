@@ -9,3 +9,5 @@
 * rails g model purchase_product product:references order:references quantity:integer
 
 * map a relationship
+
+* update a Order form and Order controller to accept nested attributes for purchase_products
