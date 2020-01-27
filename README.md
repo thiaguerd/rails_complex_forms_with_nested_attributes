@@ -13,3 +13,5 @@
 * update a Order form and Order controller to accept nested attributes for purchase_products
 
 * update a Order view to show purchased products
+
+* make sure that purchase quantity at least 1 and buyer have a name
