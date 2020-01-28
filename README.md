@@ -1,12 +1,12 @@
 # Steps
 
-* rails new shop --skip-test
+* ```rails new shop --skip-test```
 
-* rails g scaffold product name:string quantity_in_stock:integer
+* ```rails g scaffold product name:string quantity_in_stock:integer```
 
-* rails g scaffold order buyer_name:string
+* ```rails g scaffold order buyer_name:string ```
 
-* rails g model purchase_product product:references order:references quantity:integer
+* ```rails g model purchase_product product:references order:references quantity:integer```
 
 * map a relationship
 
@@ -20,9 +20,13 @@
 
 # Install
 
-* bundle install
+```bundle install```
 
-* rake db:create
+```rake db:create```
 
-* rake db:seed
+```rake db:seed```
+
+# Run
+
+```rails s```
 
